@@ -42,7 +42,7 @@ This script is intended to be used on the following Azota exam pages:
 
 2. **Open the Azota exam page** you are currently on (`https://azota.vn/*`).
    
-3. **Press `Control + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
+3. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
 
 4. **Navigate to the Console tab** in the Developer Tools.
 
