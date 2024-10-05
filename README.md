@@ -6,7 +6,7 @@ This guide provides steps to disable event listeners during an Azota exam.
 
 1. **Open the Azota exam page.**
    
-2. **Press `Control + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
+2. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
 
 3. **Navigate to the Console tab** in the Developer Tools.
 
