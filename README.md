@@ -44,6 +44,12 @@ This script is intended to be used on the following Azota exam pages:
    
 3. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
 
+| Operating System | Keys |
+| :----------------: | :----: |
+| macOS | <kbd>alt</kbd><kbd>cmd</kbd><kbd>i</kbd> |
+| Windows | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> |
+| Linux | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> |
+
 4. **Navigate to the Console tab** in the Developer Tools.
 
 5. **Paste the copied JavaScript code** into the console.
