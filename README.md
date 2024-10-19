@@ -9,7 +9,15 @@ This script is intended to be used on the following Azota exam pages:
 
 ## Steps:
 
-1. **Copy the code below before entering the exam**:
+1. **Allow pasting in the console (If need)**
+
+    In some browsers, pasting directly into the console is disabled for security reasons. To enable it, type the following into the console first and hit Enter:
+
+    ```javascript
+    allow pasting
+    ```
+
+2. **Copy the code below before entering the exam**:
    
     ```javascript
     function removeAllEventListeners(target, eventTypes) {
@@ -40,9 +48,9 @@ This script is intended to be used on the following Azota exam pages:
     removeAllEventListeners(document, eventTypes);
     ```
 
-2. **Open the Azota exam page** you are currently on (`https://azota.vn/*`).
+3. **Open the Azota exam page** you are currently on (`https://azota.vn/*`).
    
-3. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
+4. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
 
 | Operating System | Keys |
 | :----------------: | :----: |
@@ -50,15 +58,7 @@ This script is intended to be used on the following Azota exam pages:
 | Windows | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> |
 | Linux | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>i</kbd> |
 
-4. **Navigate to the Console tab** in the Developer Tools.
-
-5. **Allow pasting in the console (If need)**
-
-    In some browsers, pasting directly into the console is disabled for security reasons. To enable it, type the following into the console first and hit Enter:
-
-    ```javascript
-    allow pasting
-    ```
+5. **Navigate to the Console tab** in the Developer Tools.
 
 6. **Paste the copied JavaScript code** into the console.
 
@@ -66,7 +66,7 @@ This script is intended to be used on the following Azota exam pages:
 
     Once the script is executed successfully, you'll see the message `Removed all - Done by NGUYEN HUYNH DANG NHUT` in the console, confirming that all event listeners have been removed.
 
-9. **Error Handling**: 
+8. **Error Handling**: 
    - If the script encounters an error while removing the event listeners, it will display an error message in the console:  
      `An error occurred: Could not remove event listeners. Error details: [error details]`.
 
