@@ -1,4 +1,4 @@
-# AZOTA Exam Bypass Instructions
+# AZOTA & K12 Online Exam Bypass Instructions
 
 This guide provides steps to disable event listeners during an Azota exam.
 
@@ -6,6 +6,7 @@ This guide provides steps to disable event listeners during an Azota exam.
 This script is intended to be used on the following Azota exam pages:
 
 - **Azota pages**: `https://azota.vn/*`
+- **K12 Online**: `https://k12online.vn/*`
 
 ## Steps:
 
@@ -18,6 +19,7 @@ This script is intended to be used on the following Azota exam pages:
     ```
 
 2. **Copy the code below before entering the exam**:
+    **AZOTA**
    
     ```javascript
     function removeAllEventListeners(target, eventTypes) {
@@ -47,10 +49,40 @@ This script is intended to be used on the following Azota exam pages:
     removeAllEventListeners(window, eventTypes);
     removeAllEventListeners(document, eventTypes);
     ```
-
-3. **Open the Azota exam page** you are currently on (`https://azota.vn/*`).
+    **K12 Online**
    
-4. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
+    ```javascript
+    function removeAllEventListeners(target, eventTypes) {
+        try {
+            eventTypes.forEach(eventType => {
+                const listeners = getEventListeners(target)[eventType];
+                if (listeners) {
+                    listeners.forEach(listener => {
+                        target.removeEventListener(eventType, listener.listener);
+                    });
+                }
+            });
+            console.log("Removed all - Done by NGUYEN HUYNH DANG NHUT");
+        } catch (error) {
+            console.error("An error occurred: Could not remove event listeners. Error details:", error);
+        }
+    }
+    
+    const eventTypes = [
+        'DOMContentLoaded', 'ajaxError', 'ajaxStart', 'ajaxStop', 'auxclick',
+        'beforeunload', 'blur', 'change', 'click', 'confirmation', 
+        'contextmenu', 'focus', 'focusin', 'focusout', 'hashchange',
+        'keydown', 'load', 'pagehide', 'pageshow', 'popstate',
+        'readystatechange', 'resize', 'scroll', 'unload', 'visibilitychange'
+    ];
+    
+    // Remove event listeners from window and document
+    removeAllEventListeners(window, eventTypes);
+    removeAllEventListeners(document, eventTypes);
+     ```
+4. **Open the Azota or K12 Online exam page** you are currently on (`https://azota.vn/*` or `https://k12online.vn/*`).
+   
+5. **Press `Ctrl + Shift + I`** to open the Developer Tools. This will bring up the console where you can enter custom scripts.
 
 | Operating System | Keys |
 | :----------------: | :----: |
@@ -71,7 +103,7 @@ This script is intended to be used on the following Azota exam pages:
      `An error occurred: Could not remove event listeners. Error details: [error details]`.
 
 ## Notes:
-- This script removes certain event listeners from the Azota exam page, which may prevent certain restrictions like monitoring or alerts triggered by specific actions.
-- Use this responsibly and only for educational purposes.
+- This script removes certain event listeners from the Azota & K12 Online exam page, which may prevent certain restrictions like monitoring or alerts triggered by specific actions.
+- You can use this responsibly and only for educational purposes.
 
-**Disclaimer:** The author is not responsible for any misuse of this script.
+**Disclaimer:** The author is not responsible for misusing this script.
