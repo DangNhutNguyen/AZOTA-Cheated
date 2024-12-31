@@ -1,6 +1,7 @@
 # AZOTA & K12 Online Exam Bypass Instructions
 
-This guide provides steps to disable event listeners during an Azota exam.
+This guide provides steps to disable event listeners during an Azota & K12 Online exam.
+This script used to bypass the restriction by other test to cheat out.
 
 ## Applicable Pages:
 This script is intended to be used on the following Azota exam pages:
