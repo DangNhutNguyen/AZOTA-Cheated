@@ -104,6 +104,7 @@ This script is intended to be used on the following Azota exam pages:
 
 ## Notes:
 - This script removes certain event listeners from the Azota & K12 Online exam page, which may prevent certain restrictions like monitoring or alerts triggered by specific actions.
+- Yet, I've tested this script in command and the error is: You couldn't Accepted to submit your test until the time is up in K12 Online, but the Azota could used easily.
 - You can use this responsibly and only for educational purposes.
 
 **Disclaimer:** The author is not responsible for misusing this script.
